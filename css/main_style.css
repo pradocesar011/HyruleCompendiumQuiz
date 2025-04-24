@@ -17,3 +17,8 @@ button {
 button:hover {
   background-color: #0056b3;
 }
+
+.col{
+  background-color: #65b300;
+  border-color: black;
+}
