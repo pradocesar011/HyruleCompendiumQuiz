@@ -22,3 +22,140 @@ button:hover {
   background-color: #65b300;
   border-color: black;
 }
+
+.image-grid-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+#artImage {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.overlay-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  z-index: 2;
+  pointer-events: none; /* optional: so clicks pass through */
+}
+
+.overlay-grid .row {
+  margin: 0;
+  padding: 0;
+  height: 50%;
+}
+
+.overlay-grid .col {
+  border: 1px solid black;
+  background-color: rgba(101, 179, 0, 0.4); /* semi-transparent green */
+}
+
+
+
+
+
+
+
+
+
+
+/* Wrapper to position image and grid together */
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* The image itself */
+.image-container img {
+  width: 100%; /* Make sure the image is responsive */
+  height: auto;
+}
+
+/* The grid overlay */
+.grid-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-rows: repeat(2, 1fr); /* 2 rows */
+  gap: 1px; /* Optional, for space between grid items */
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Prevent interaction with the grid */
+}
+
+/* Style for grid cells */
+.grid-cell {
+  border: 2px solid rgba(0, 0, 0, 0.7); 
+  background-color: rgb(255, 255, 255); 
+}
+
+.transparent {
+  background-color: rgba(0, 0, 0, 0); /* fully transparent */
+}
+
+
+
+
+
+.art-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.art-block {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fafafa;
+}
+
+.art-block img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.art-block h3 {
+  margin: 10px 0 5px;
+  font-size: 1.1em;
+}
+
+.art-block p {
+  font-size: 0.95em;
+  color: #555;
+}
+
+/* Highlighted answerArtwork */
+.art-block.answer {
+  border-color: #4CAF50;
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+  background-color: #f0fff0;
+}
+
+
+body {
+  background-color: #f4f8fb;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+
+
+.card-img-top {
+  object-fit: cover;
+  height: 200px;
+}
