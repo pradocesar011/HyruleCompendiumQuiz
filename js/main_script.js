@@ -37,14 +37,10 @@ $(document).ready(function () {
   
         // Display the "correctEntry" in the regular entries section as well
         const correctCard = `
-          <div class="col-md-4 text-center entry correct-entry">
-            <div class="card h-100 shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title text-capitalize">${correctEntry.name}</h5>
-              </div>
-            </div>
-          </div>
-          `;
+          <button type="button" class="col mx-3 py-3 btn btn-secondary entry correct-entry">
+            <h5 class="text-capitalize">${correctEntry.name}</h5>
+          </button>
+        `;
           // <img src="${correctEntry.image}" class="card-img-top" alt="${correctEntry.name}" data-entry="correct">
           // <p class="card-text"><strong>Category:</strong> ${correctEntry.category}</p>
           // ${correctEntry.description ? `<p class="card-text">${correctEntry.description}</p>` : ''}
@@ -55,14 +51,10 @@ $(document).ready(function () {
         randomEntries.forEach((entry, index) => {
           if (index !== correctEntryIndex) {
             const card = `
-              <div class="col-md-4 text-center entry">
-                <div class="card h-100 shadow-sm">
-                  <div class="card-body">
-                    <h5 class="card-title text-capitalize">${entry.name}</h5>
-                  </div>
-                </div>
-              </div>
-              `;
+              <button type="button" class="col mx-3 py-3 btn btn-secondary entry">
+                <h5 class="text-capitalize">${entry.name}</h5>
+              </button>
+            `;
                   
             $('#entries').append(card);
           }
