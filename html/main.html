@@ -22,16 +22,16 @@
       </div>
     </div>
 
-
-
     <div class="container my-5">
       <h1 class="text-center mb-4">Breath of the Wild Compendium</h1>
-      <div class="row justify-content-center mb-4">
+
+      <!-- IMG & Griid cont -->
+      <div class="row justify-content-center m-4">
         <div class="col-md-12 text-center">
           <!-- This is where the correct entry image will be injected -->
-          <div class="image-container">
+          <div class="image-container ">
 
-            <img id="answerEntry" class="img-fluid mb-4" alt="Answer Entry Image" />
+            <img id="answerEntry" class="img-fluid" alt="Answer Entry Image" />
             <div class="grid-overlay">
               <div class="grid-cell"></div>
               <div class="grid-cell"></div>
@@ -43,11 +43,14 @@
           </div>
         </div>
       </div>
-      <div id="resultMessage" class="text-center mt-3" style="display: none;">
+
+      <div id="resultMessage" class="text-center m-4" style="">
         <h4 class="text-success">Correct!</h4>
+        <button type="button" class="btn btn-success" id="reload-btn">Reload</button>
       </div>
-      <button id="testBtn" class="btn btn-primary">Test</button>
-      <button id="testBtnClear" class="btn btn-primary">Clear</button>
+
+      <!-- <button id="testBtn" class="btn btn-primary">Test</button>
+      <button id="testBtnClear" class="btn btn-primary">Clear</button> -->
 
 
       <div id="entries" class="row g-4 justify-content-center">

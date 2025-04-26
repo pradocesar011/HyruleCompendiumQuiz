@@ -2,12 +2,7 @@
 .image-container {
   position: relative;
   display: inline-block;
-}
-
-/* The image itself */
-.image-container img {
-  width: 100%; /* Make sure the image is responsive */
-  height: auto;
+  height: fit-content;
 }
 
 /* The grid overlay */
