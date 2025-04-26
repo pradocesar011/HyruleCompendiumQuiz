@@ -35,7 +35,6 @@ $(document).ready(function () {
         // Store the correct image URL to check against later
         const correctImageUrl = correctEntry.image;
   
-        // Display the "correctEntry" in the regular entries section as well
         const correctCard = `
           <button type="button" class="col mx-3 py-3 btn btn-secondary entry correct-entry">
             <h5 class="text-capitalize">${correctEntry.name}</h5>
@@ -45,23 +44,20 @@ $(document).ready(function () {
           // <p class="card-text"><strong>Category:</strong> ${correctEntry.category}</p>
           // ${correctEntry.description ? `<p class="card-text">${correctEntry.description}</p>` : ''}
         
-        $('#entries').append(correctCard);
-            
-        // Display the other entries in the regular section
+          
+        // Display entries in the regular section
         randomEntries.forEach((entry, index) => {
           if (index !== correctEntryIndex) {
             const card = `
-              <button type="button" class="col mx-3 py-3 btn btn-secondary entry">
-                <h5 class="text-capitalize">${entry.name}</h5>
-              </button>
+            <button type="button" class="col mx-3 py-3 btn btn-secondary entry">
+            <h5 class="text-capitalize">${entry.name}</h5>
+            </button>
             `;
-                  
+            
             $('#entries').append(card);
+          } else if (index == correctEntryIndex) {
+            $('#entries').append(correctCard);
           }
-  
-          // <img src="${entry.image}" class="card-img-top" alt="${entry.name}" data-entry="incorrect">
-          // <p class="card-text"><strong>Category:</strong> ${entry.category}</p>
-          // ${entry.description ? `<p class="card-text">${entry.description}</p>` : ''}
         });
 
         $('#correct-name').text(correctEntry.name);
@@ -88,6 +84,11 @@ $(document).ready(function () {
   
   
   
+
+  function shuffle() {
+    
+  }
+
 
   // GRID CELL MANAGEMENT
 
