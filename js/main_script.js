@@ -67,9 +67,7 @@ $(document).ready(function () {
         // Add click event to entry images
         $('.entry').on("click", function() {
           let $this = $(this);
-    
-          console.log($this + " has been clicked");
-          
+          $this.prop("disabled", true);
     
           if ($this.hasClass("correct-entry")) {
             console.log("Correct entry has been clicked");
