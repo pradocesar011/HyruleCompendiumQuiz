@@ -25,7 +25,7 @@ $(document).ready(function () {
 
       // Display the "correctEntry" in the regular entries section as well
       const correctCard = `
-        <div class="col-md-4 entry correct-entry">
+        <div class="col-md-4 text-center entry correct-entry">
           <div class="card h-100 shadow-sm">
             <div class="card-body">
               <h5 class="card-title text-capitalize">${correctEntry.name}</h5>
@@ -43,7 +43,7 @@ $(document).ready(function () {
       randomEntries.forEach((entry, index) => {
         if (index !== correctEntryIndex) {
           const card = `
-            <div class="col-md-4 entry">
+            <div class="col-md-4 text-center entry">
               <div class="card h-100 shadow-sm">
                 <div class="card-body">
                   <h5 class="card-title text-capitalize">${entry.name}</h5>
