@@ -22,7 +22,7 @@
       </div>
     </div>
 
-    <div class="container my-5">
+    <div class="container my-5 justify-content-center">
       <h1 class="text-center mb-4">Breath of the Wild Compendium</h1>
 
       <!-- IMG & Griid cont -->
@@ -44,9 +44,13 @@
         </div>
       </div>
 
-      <div id="resultMessage" class="text-center m-4" style="">
-        <h4 class="text-success">Correct!</h4>
-        <button type="button" class="btn btn-success" id="reload-btn">Reload</button>
+      <div class="row justify-content-center">
+        <div id="resultMessage" class="container col-4 text-center m-4 c" style="">
+          <h4 class="text-success">Correct!</h4>
+          <h5 id="correct-name" class="text-capitalize"></h5>
+          <p id="correct-description"></p>
+          <button type="button" class="btn btn-success" id="reload-btn">Reload</button>
+        </div>
       </div>
 
       <!-- <button id="testBtn" class="btn btn-primary">Test</button>

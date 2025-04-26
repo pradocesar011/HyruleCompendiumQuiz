@@ -63,6 +63,9 @@ $(document).ready(function () {
           // <p class="card-text"><strong>Category:</strong> ${entry.category}</p>
           // ${entry.description ? `<p class="card-text">${entry.description}</p>` : ''}
         });
+
+        $('#correct-name').text(correctEntry.name);
+        $('#correct-description').text(correctEntry.description);
   
         // Add click event to entry images
         $('.entry').on("click", function() {
