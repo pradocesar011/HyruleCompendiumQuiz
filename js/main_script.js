@@ -70,11 +70,13 @@ $(document).ready(function () {
         
 
         if ($this.hasClass("correct-entry")) {
+          console.log("Correct entry has been clicked");
           // Show the correct message
           $('#resultMessage').show();
-          console.log("Correct entry has been clicked");
+          clear();
         } else {
           console.log("INcorrect entry has been clicked"); 
+          test();
         }
 
     });
@@ -84,21 +86,24 @@ $(document).ready(function () {
 
 
 
-  //hacer cajas invisibles
-  $('#testBtn').on('click', function () {
+  // GRID CELL MANAGEMENT
+
+  function test () {
     // Get all grid-cells that are NOT yet transparent
     let visibleCells = $('.grid-cell').not('.transparent');
-
+    
     // Check if there are any left
     if (visibleCells.length > 0) {
       // Pick a random index
       let randomIndex = Math.floor(Math.random() * visibleCells.length);
-
+  
       // Make the randomly chosen cell transparent
       visibleCells.eq(randomIndex).addClass('transparent');
     }
-  });
-  $('#testBtnClear').on('click', function () {
+  };
+  
+  function clear () {
     $('.grid-cell').addClass('transparent');
-  });
+  };
+
 });
