@@ -1,9 +1,36 @@
 $(document).ready(function () {
   $(document).ready(function () {
+    let category = "all";
+    
     newQuestion();
 
     $("#reload-btn").on("click", function () {
       console.log("Reload clicked");
+      newQuestion();
+    });
+
+    $("#btn-creatures").on("click", function () {
+      category = "category/creatures";
+      newQuestion();
+    });
+    $("#btn-equipment").on("click", function () {
+      category = "category/equipment";
+      newQuestion();
+    });
+    $("#btn-materials").on("click", function () {
+      category = "category/materials";
+      newQuestion();
+    });
+    $("#btn-monsters").on("click", function () {
+      category = "category/monsters";
+      newQuestion();
+    });
+    $("#btn-treasure").on("click", function () {
+      category = "category/treasure";
+      newQuestion();
+    });
+    $("#btn-all").on("click", function () {
+      category = "all";
       newQuestion();
     });
     
@@ -13,7 +40,7 @@ $(document).ready(function () {
       $('.grid-cell').removeClass('transparent');
       $('#resultMessage').hide();
 
-      $.get("https://botw-compendium.herokuapp.com/api/v3/compendium/all", function (data) {
+      $.get("https://botw-compendium.herokuapp.com/api/v3/compendium/" + category, function (data) {
         const allEntries = data.data;
         const randomEntries = [];
   
