@@ -16,7 +16,7 @@ $(document).ready(function () {
       const randomEntries = [];
       
       // Get 3 random entries
-      while (randomEntries.length < 3) {
+      while (randomEntries.length < 6) {
         const rand = Math.floor(Math.random() * allEntries.length);
         if (!randomEntries.includes(allEntries[rand])) {
           randomEntries.push(allEntries[rand]);
