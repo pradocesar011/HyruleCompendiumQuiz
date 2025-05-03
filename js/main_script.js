@@ -1,6 +1,9 @@
 $(document).ready(function () {
   $(document).ready(function () {
-    let category = "all";
+    const urlParams = new URLSearchParams(window.location.search);
+    let category = urlParams.get('category');
+
+    // let category = "all";
     
     newQuestion();
 
