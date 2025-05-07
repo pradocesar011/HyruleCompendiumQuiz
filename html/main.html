@@ -26,7 +26,7 @@
       <h1 class="text-center mb-4">Breath of the Wild Compendium</h1>
     
       <!-- Wrapper flex -->
-      <div class="d-flex justify-content-between align-items-start flex-wrap">
+      <div class="d-flex justify-content-between align-items-center flex-wrap"style="min-height:60vh;">
         
         <!-- Block 1: Image Grid -->
         <div class="flex-fill me-3" style="max-width:48%;">
@@ -51,16 +51,15 @@
         <div class="flex-fill ms-3" style="max-width:48%;">
           <div class="row justify-content-center m-4">
             <div id="resultMessage" class="col-12 text-center">
-              <h4 class="text-success">Correct!</h4>
-              <h5 id="correct-name" class="text-capitalize"></h5>
-              <p id="correct-description"></p>
-              <button type="button" class="btn btn-success" id="reload-btn">
+              <h4 id="result-text" class="text-success">???</h4>
+              <h5 id="correct-name" class="text-capitalize hidden"></h5>
+              <p id="correct-description" class="hidden"></p>
+              <button type="button" class="btn btn-success hidden" id="reload-btn">
                 Reload
               </button>
             </div>
           </div>
         </div>
-    
       </div>
     </div>
     

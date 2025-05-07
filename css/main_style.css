@@ -20,14 +20,27 @@
 
 /* Style for grid cells */
 .grid-cell {
-  margin: 0;
-  border: 2px solid rgba(0, 0, 0, 0.25);
-  background-color: rgb(255, 255, 255); 
+  border: 1px solid #ccc;
+  background: rgba(255, 255, 255, 0.8); 
+  transition: background 0.3s ease;
 }
 
 .transparent {
   border: 2px solid rgba(0, 0, 0, 0);
   background-color: rgba(0, 0, 0, 0); /* fully transparent */
+}
+
+.hidden {
+  display: none !important;
+}
+
+.grid-cell {
+  background: transparent;
+}
+
+
+.grid-cell.transparent {
+  background: transparent; /* Casilla revelada */
 }
 
 
