@@ -22,53 +22,45 @@
       </div>
     </div>
 
-    <div class="container my-5">
-      <h1 class="text-center mb-4 hylia-font">Breath of the Wild Compendium</h1>
-    
-      <!-- Wrapper flex -->
-      <div class="d-flex justify-content-between align-items-center flex-wrap"style="min-height:60vh;">
-        
-        <!-- Block 1: Image Grid -->
-        <div class="flex-fill me-3" style="max-width:48%;">
-          <div class="row justify-content-center m-4">
-            <div class="col-12 text-center">
-              <div class="image-container">
-                <img id="answerEntry" class="img-fluid" alt="Answer Entry Image" />
-                <div class="grid-overlay">
-                  <div class="grid-cell"></div>
-                  <div class="grid-cell"></div>
-                  <div class="grid-cell"></div>
-                  <div class="grid-cell"></div>
-                  <div class="grid-cell"></div>
-                  <div class="grid-cell"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-    
-        <!-- Block 2: Result -->
-        <div class="flex-fill ms-3" style="max-width:48%;">
-          <div class="row justify-content-center m-4">
-            <div id="resultMessage" class="col-12 text-center">
-              <h4 id="result-text" class="text-success">???</h4>
-              <h5 id="correct-name" class="text-capitalize hidden"></h5>
-              <p id="correct-description" class="hidden"></p>
-              <button type="button" class="btn btn-success hidden" id="reload-btn">
-                Reload
-              </button>
+    <div class="container my-5 justify-content-center">
+      <h1 class="text-center mb-4">Breath of the Wild Compendium</h1>
+
+      <!-- IMG & Griid cont -->
+      <div class="row justify-content-center m-4">
+        <div class="col-md-12 text-center">
+          <!-- This is where the correct entry image will be injected -->
+          <div class="image-container ">
+
+            <img id="answerEntry" class="img-fluid" alt="Answer Entry Image" />
+            <div class="grid-overlay">
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    
+
+      <div class="row justify-content-center">
+        <div id="resultMessage" class="container col-4 text-center m-4 c" style="">
+          <h4 class="text-success">Correct!</h4>
+          <h5 id="correct-name" class="text-capitalize"></h5>
+          <p id="correct-description"></p>
+          <button type="button" class="btn btn-success" id="reload-btn">Reload</button>
+        </div>
+      </div>
+
       <!-- <button id="testBtn" class="btn btn-primary">Test</button>
       <button id="testBtnClear" class="btn btn-primary">Clear</button> -->
+
 
       <div id="entries" class="row gy-4 justify-content-center">
         <!-- Random entries will be displayed here -->
       </div>
+    </div>
 
     <div class="container py-5 justify-content-center">
       <button type="button" class="btn btn-info" id="btn-creatures">Creatures</button>

@@ -1,7 +1,6 @@
 $(document).ready(function () {
   const urlParams = new URLSearchParams(window.location.search); // Get category selected from index
   let category = urlParams.get('category');
-  let correctEntryData = null;
   
   newQuestion();
 
@@ -10,12 +9,7 @@ $(document).ready(function () {
   function newQuestion() {
     $('#entries').empty();
     $('.grid-cell').removeClass('transparent');
-    $('#resultMessage').show();
-    $('#result-text').text('???').removeClass('hidden');
-    $('#correct-name, #correct-description')
-      .addClass('hidden')
-      .empty();
-    $('#reload-btn').addClass('hidden');
+    $('#resultMessage').hide();
     
     $.get("https://botw-compendium.herokuapp.com/api/v3/compendium/" + category, function (data) {
       const allEntries = data.data;
@@ -32,7 +26,6 @@ $(document).ready(function () {
       // Randomly select the "correctEntry" from the 3 entries
       const correctEntryIndex = Math.floor(Math.random() * 3);
       const correctEntry = randomEntries[correctEntryIndex];
-      correctEntryData = correctEntry;
       
       // Inject the "correctEntry" image into the <img id="answerEntry">
       $('#answerEntry').attr('src', correctEntry.image);
@@ -73,27 +66,20 @@ $(document).ready(function () {
         let $this = $(this);
         $this.prop("disabled", true);
         
-        if ($(this).hasClass("correct-entry")) {
+        if ($this.hasClass("correct-entry")) {
           console.log("Correct entry has been clicked");
           // Show the correct message
-          $('#result-text').text('Correct!');
-          // Mostrar nombre y descripción
-          $('#correct-name')
-            .text(correctEntryData.name)
-            .removeClass('hidden');
-
-          $('#correct-description')
-            .text(correctEntryData.description)
-            .removeClass('hidden');
-
-          // Mostrar botón de recarga
-          $('#reload-btn').removeClass('hidden');
-
+          $('#resultMessage').show();
           clear();
+        } else {
+          console.log("INcorrect entry has been clicked"); 
+          test();
         }
       });
     });
   };
+
+
 
   
   // Reload game button
