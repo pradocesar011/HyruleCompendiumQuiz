@@ -13,8 +13,8 @@
 
   </head>
 
-  <body>
-    <div class="container-fluid p-5 bg-info-subtle">
+  <body id="background-frame" id="background-image">
+    <div class="container-fluid p-5">
       <div class="container">
         <h1>Main Page</h1>
         <p>This is the main content of the site.</p>
@@ -22,34 +22,40 @@
       </div>
     </div>
 
-    <div class="container my-5 justify-content-center">
+    <div class="container my-5">
       <h1 class="text-center mb-4">Breath of the Wild Compendium</h1>
 
-      <!-- IMG & Griid cont -->
-      <div class="row justify-content-center m-4">
-        <div class="col-md-12 text-center">
-          <!-- This is where the correct entry image will be injected -->
-          <div class="image-container ">
+      <div class="row d-flex justify-content-between align-items-start flex-wrap my-5">
 
-            <img id="answerEntry" class="img-fluid" alt="Answer Entry Image" />
-            <div class="grid-overlay">
-              <div class="grid-cell"></div>
-              <div class="grid-cell"></div>
-              <div class="grid-cell"></div>
-              <div class="grid-cell"></div>
-              <div class="grid-cell"></div>
-              <div class="grid-cell"></div>
+
+        <!-- IMG & Griid cont -->
+        <div class="col-6">
+          <div class="col-md-12 text-center">
+            <!-- This is where the correct entry image will be injected -->
+            <div class="image-container ">
+
+              <img id="answerEntry" class="img-fluid" alt="Answer Entry Image" />
+              <div class="grid-overlay">
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+                <div class="grid-cell"></div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+        
+      
 
-      <div class="row justify-content-center">
-        <div id="resultMessage" class="container col-4 text-center m-4 c" style="">
-          <h4 class="text-success">Correct!</h4>
-          <h5 id="correct-name" class="text-capitalize"></h5>
-          <p id="correct-description"></p>
-          <button type="button" class="btn btn-success" id="reload-btn">Reload</button>
+        <div class="col-6 justify-content-center align-items-center">
+          <div id="resultMessage" class="text-center">
+            <h4 class="text-success">Correct!</h4>
+            <h5 id="correct-name" class="text-capitalize"></h5>
+            <p id="correct-description"></p>
+            <button type="button" class="btn btn-success" id="reload-btn">Reload</button>
+          </div>
         </div>
       </div>
 

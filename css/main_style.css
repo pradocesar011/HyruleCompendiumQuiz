@@ -7,6 +7,14 @@
   font-display: swap;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
+
 .image-container {
   position: relative;
   display: inline-block;
@@ -43,11 +51,20 @@
   font-family: 'HyliaSerifBeta-Regular';
 }
 
-body {
+body#background-frame {
+  /* Ajusta la URL a tu imagen */
   background-image: url('../media/Sheikah\ -\ Frame\ Art.svg');
   background-size: cover;
   background-position: center center;
-  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #000;
+}
+body#background-image {
+  /* Ajusta la URL a tu imagen */
+  background-image: url('../media/Background\ Texture_Marron.png');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
   background-color: #000;
 }
 
