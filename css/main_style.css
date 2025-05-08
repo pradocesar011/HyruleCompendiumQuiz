@@ -52,22 +52,12 @@ html, body {
 }
 
 body#background-frame {
-  /* Ajusta la URL a tu imagen */
   background-image: url('../media/Sheikah\ -\ Frame\ Art.svg');
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-  background-color: #000;
+  /* background-image: url('../media/Background\ Texture_Marron.png'); */
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
 }
-body#background-image {
-  /* Ajusta la URL a tu imagen */
-  background-image: url('../media/Background\ Texture_Marron.png');
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-  background-color: #000;
-}
-
 
 
 /* 
