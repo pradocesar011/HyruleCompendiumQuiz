@@ -1,4 +1,12 @@
 /* Wrapper to position image and grid together */
+@font-face {
+  font-family: 'HyliaSerifBeta-Regular';
+  src: url('../fonts/HyliaSerifBeta-Regular.otf')   format('otf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 .image-container {
   position: relative;
   display: inline-block;
@@ -20,9 +28,9 @@
 
 /* Style for grid cells */
 .grid-cell {
-  border: 1px solid #ccc;
-  background: rgba(255, 255, 255, 0.8); 
-  transition: background 0.3s ease;
+  margin: 0;
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  background-color: rgb(255, 255, 255);
 }
 
 .transparent {
@@ -34,15 +42,18 @@
   display: none !important;
 }
 
-.grid-cell {
-  background: transparent;
+/* FUENTES */
+.hylia-font {
+  font-family: 'HyliaSerifBeta-Regular';
 }
 
-
-.grid-cell.transparent {
-  background: transparent; /* Casilla revelada */
+body {
+  background-image: url('../media/Sheikah\ -\ Frame\ Art.svg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #000;
 }
-
 
 
 
