@@ -27,8 +27,8 @@ html, body {
   top: 0;
   left: 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  grid-template-rows: repeat(2, 1fr); /* 2 rows */
+  grid-template-columns: repeat(4, 1fr); /* 3 columns */
+  grid-template-rows: repeat(3, 1fr); /* 2 rows */
   width: 100%;
   height: 100%;
   pointer-events: none; /* Prevent interaction with the grid */
@@ -58,6 +58,31 @@ body#background-frame {
   background-repeat: no-repeat; 
   background-size: cover; 
 }
+
+.btn-1{
+  /* border-radius: 100%;
+  border-width: 100%;
+  border-top:gray;
+  font-size: clamp(0.6rem,2vw,1rem)!important; */
+  height: 80px !important;
+  width: 220px !important;
+  padding: 50px 50px !important; 
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+
+.btn-1:hover{
+  /* border-color: aqua;
+  border-width: 3px;
+  border-style: solid; */
+   border: aqua 3px solid !important; 
+  
+}
+
+
+
 
 
 /* 
