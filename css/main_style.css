@@ -1,9 +1,34 @@
 /* Wrapper to position image and grid together */
 @font-face {
   font-family: 'HyliaSerifBeta-Regular';
-  src: url('../fonts/HyliaSerifBeta-Regular.otf')   format('otf');
+  src: url('../fonts/HyliaSerifBeta-Regular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BotW_Sheikah_Pixel';
+  src: url('../fonts/BotW_Sheikah_Pixel.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Roboto-Italic';
+  src: url('../fonts/Roboto-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto-VariableFont_wdth\,wght';
+  src: url('../fonts/Roboto-VariableFont_wdth\,wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
   font-display: swap;
 }
 
@@ -11,8 +36,30 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
+  font-family: 'HyliaSerifBeta-Regular', sans-serif;
+  color:rgba(60, 211, 252, 1);
+  background-color: rgb(18, 1, 1);
+    font-style: italic;
+
 }
 
+p{
+  font-family: 'Roboto-Italic', sans-serif;
+      text-shadow: 0 0 2px #ccc, 0 0 2px rgba(60, 210, 252, 0.301);
+
+}
+
+h1, h2{
+    text-shadow: 0 0 3px #ccc, 0 0 6px rgba(60, 210, 252, 0.301);
+}
+h3, h4{
+    text-shadow: 0 0 2px #ccc, 0 0 3px rgba(60, 210, 252, 0.301);
+}
+
+h6{
+  font-family: 'BotW_Sheikah_Pixel', sans-serif;
+  opacity: 0.5;
+}
 
 
 .image-container {
@@ -38,12 +85,17 @@ html, body {
 .grid-cell {
   margin: 0;
   border: 2px solid rgba(0, 0, 0, 0.25);
-  background-color: rgb(255, 255, 255); 
+  background-color: rgb(255, 255, 255);
+  background-image: url(../media/Sheikah\ -\ Rune\ Set.png);
+  background-size: 120%; /* Ensures the image covers the area */
+  background-position: center; /* Centers the image */
+
 }
 
 .transparent {
   border: 2px solid rgba(0, 0, 0, 0);
   background-color: rgba(0, 0, 0, 0); /* fully transparent */
+  opacity: 0;
 }
 
 /* FUENTES */
@@ -70,6 +122,8 @@ body#background-frame {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
+  color:rgb(73, 156, 179)!important;
+
 }
 
 
@@ -77,11 +131,34 @@ body#background-frame {
   /* border-color: aqua;
   border-width: 3px;
   border-style: solid; */
-   border: aqua 3px solid !important; 
-  
+  border: aqua 3px solid !important; 
+  color:rgba(60, 211, 252, 1)!important;
+  text-shadow: 0 0 3px #ccc, 0 0 6px rgba(60, 210, 252, 0.301)!important;
 }
 
+#reload-btn{
+  color:rgba(255, 243, 129, 1)!important;
+  text-shadow: 0 0 3px #ccc, 0 0 6px rgba(255, 242, 129, 0.519)!important;
 
+  letter-spacing: 1px;
+  font-family: 'Roboto-Italic', sans-serif;
+  font-size: 24px;
+  background-image: url(../media/Correct_button.png);
+  height: 80px !important;
+  width: 220px !important;
+  background-size: 100% !important; /* Ensures the image covers the area */
+  background-position: center !important; /* Centers the image */
+}
+
+#reload-btn:hover{
+  text-shadow: 0 0 3px #ccc, 0 0 6px rgba(255, 243, 129, 1)!important;
+border: aqua 3px solid !important; 
+}
+
+.text-success{
+color:rgba(60, 211, 252, 1)!important;
+ ;
+}
 
 
 

@@ -15,18 +15,21 @@
   </head>
 
   <body id="background-frame" id="background-image">
-    <div class="container-fluid p-5">
+    <div class="container-fluid p-1">
       <div class="container">
-        <h1>Main Page</h1>
-        <p>This is the main content of the site.</p>
-        <a href="../index.html"><button type="button" class="btn btn-primary">Return</button></a>
+        <h1>Main Page <a href="../index.html"><button type="button" class="btn btn-primary">Return</button></a></h1>
       </div>
     </div>
 
-    <div class="container my-5">
-      <h1 class="text-center mb-4">Breath of the Wild Compendium</h1>
+    <div class="container my-1">
+      <h1 class="text-center mb-1">
+        <img src="../media/BoderDecoration.png"><img/>
+          Breath of the Wild Compendium
+        <img style="transform: scaleX(-1)" src="../media/BoderDecoration.png"><img/>
+        </h1>
+      <h6 class="Sheikah-Pixel text-center display-6 py-1">qwertyuiop</h6>
 
-      <div class="row d-flex justify-content-between align-items-start flex-wrap my-5">
+      <div class="row d-flex justify-content-between align-items-start flex-wrap my-4 py-4">
 
 
         <!-- IMG & Griid cont -->
@@ -60,10 +63,10 @@
 
         <div class="col-6 justify-content-center align-items-center">
           <div id="resultMessage" class="text-center">
-            <h4 class="text-success">Correct!</h4>
-            <h5 id="correct-name" class="text-capitalize"></h5>
+            <h3 class="text-success">Correct!</h3>
+            <h4 id="correct-name" class="text-capitalize"></h4>
             <p id="correct-description"></p>
-            <button type="button" class="btn btn-success" id="reload-btn">Reload</button>
+            <button type="button" class="btn py-2 px-4 rounded-pill  bg-black" id="reload-btn">Correct!</button>
           </div>
         </div>
       </div>

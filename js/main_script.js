@@ -36,7 +36,7 @@ $(document).ready(function () {
       
       const correctCard = `
       <div class="col-3 d-flex justify-content-center">
-        <button type="button" class="btn py-4 px-4 border-box text-wrap text-white bg-black border boder-secondary border-4 entry w-100 fixed-height correct-entry rounded-pill btn-1">
+        <button type="button" class="btn py-4 px-4 border-box text-wrap bg-black border boder-secondary border-4 entry w-100 fixed-height correct-entry rounded-pill btn-1">
             <h5 class="text-capitalize">${correctEntry.name}</h5>
           </button>
       <div/>
@@ -52,7 +52,7 @@ $(document).ready(function () {
         if (index !== correctEntryIndex) {
           const card = `
           <div class="col-3 d-flex justify-content-center">
-            <button type="button" class="btn py-4 px-4 border-box text-wrap text-white bg-black border boder-secondary border-4 entry w-100 fixed-height entry rounded-pill btn-1">
+            <button type="button" class="btn py-4 px-4 border-box text-wrap bg-black border boder-secondary border-4 entry w-100 fixed-height entry rounded-pill btn-1">
               <h5 class="text-capitalize">${entry.name}</h5>
             </button>
           <div/>
@@ -142,8 +142,8 @@ $(document).ready(function () {
   };
   
   function clear () {
-   $('.grid-cell').removeClass('transparent').fadeOut(500);
-  // $('.grid-cell').addClass('transparent');
+  //  $('.grid-cell').removeClass('transparent').fadeOut(500);
+  $('.grid-cell').addClass('transparent');
 }
 
 
