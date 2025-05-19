@@ -37,8 +37,8 @@ html, body {
   padding: 0;
   height: 100%;
   font-family: 'HyliaSerifBeta-Regular', sans-serif;
-  color:rgba(60, 211, 252, 1);
-  background-color: rgb(18, 1, 1);
+  color:rgb(221, 248, 255);
+  /* background-color: rgb(18, 1, 1); */
     font-style: italic;
 
 }
@@ -104,11 +104,12 @@ h6{
 }
 
 body#background-frame {
-  background-image: url('../media/Sheikah\ -\ Frame\ Art.svg');
-  /* background-image: url('../media/Background\ Texture_Marron.png'); */
-  background-position: center; 
-  background-repeat: no-repeat; 
-  background-size: cover; 
+  background-image: url('../media/Background_Final.png');  /* background-image: url('../media/Background\ Texture_Marron.png'); */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
 .btn-1{
@@ -122,7 +123,7 @@ body#background-frame {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  color:rgb(73, 156, 179)!important;
+  color:rgb(105, 252, 255)!important;
 
 }
 
@@ -135,6 +136,33 @@ body#background-frame {
   color:rgba(60, 211, 252, 1)!important;
   text-shadow: 0 0 3px #ccc, 0 0 6px rgba(60, 210, 252, 0.301)!important;
 }
+
+.btn-2{
+  /* border-radius: 100%;
+  border-width: 100%;
+  border-top:gray;
+  font-size: clamp(0.6rem,2vw,1rem)!important; */
+  /* height: 80px !important;
+  width: 220px !important;
+  padding: 50px 50px !important;  */
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color:rgb(105, 252, 255)!important;
+}
+
+.btn-2:hover{
+  /* border-color: aqua;
+  border-width: 3px;
+  border-style: solid; */
+  border: aqua 3px solid !important; 
+  color:rgba(60, 211, 252, 1)!important;
+  text-shadow: 0 0 3px #ccc, 0 0 6px rgba(60, 210, 252, 0.301)!important;
+}
+
+
+
+
 
 #reload-btn{
   color:rgba(255, 243, 129, 1)!important;

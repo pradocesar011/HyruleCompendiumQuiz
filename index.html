@@ -12,34 +12,60 @@
 
 </head>
 <body>
-  <div class="container-fluid p-5 bg-info-subtle">
-    <div class="container">
-      <h1>Welcome to Our Website</h1>
-      <p>Click below to continue</p>
-      <!-- <a href="html/main.html"><button type="button" class="btn btn-primary">Enter</button></a> -->
+  <div class="container text-center text-white p-0 p-sm-3">
+    <h1 >Breath of The Wild Compendium</h1>
+    <div class="container my-1">
+      <h3 class="text-center mb-1">
+        <img class="border-decoration mirrored" src="../media/BoderDecoration.png"><img/>
+          Compendium Web Puzzle Game
+        <img class="border-decoration mirrored" src="../media/BoderDecoration.png"><img/>
+      </h3>
     </div>
-  </div>
+
+    <div class="details bg-transparent card mx-auto p-4 custom-card text-start">
+      <div class="d-flex align-items-center ">
+        <div class="position-relative d-inline-block">
+          <img src="../media/Starburst.png" class="img-fluid" alt="Background">
+          <img src="../media/UDIT_Logo.png" class="udit-logo position-absolute top-50 start-50 translate-middle logo-overlay img-fluid w-50" id="logo"alt="Logo">
+        </div>
+        <!-- <img src="../media/UDIT_Logo.png" alt="UDIT logo" class="udit-logo me-4"> -->
+        <div>
+          <h2 class="fw-bold fst-italic">What is this WebPage?</h2>
+          <hr class="my-0 border-top border-secondary">
+          <p>This webpage was made for a university project using the "Breath of the Wild: Hyrule Compendium" API, click below to enter!</p>
+          <p class="mb-1">Created by:</p>
+          <p class="mb-0">Carlos Díaz</p>
+          <p class="mb-0">Cesar Prado</p>
+          <p class="mb-0">Felipe Weil</p>
+
+        </div>
+      </div>
+      <div class="text-end ">
+        <span class="inventory">Inventory <img src="../media/Plus_Icon.png" ><img/></span>
+      </div>
+    </div>
 
   <!-- CATEGORY BTNS -->
-  <div class="container py-5 justify-content-center">
+  <div class="container d-flex py-2 justify-content-center bg-transparent flex-wrap gap-2 ">
+    <a href="html/main.html?category=all">
+      <button type="button" class="btn btn-info mx-1 px-4 bg-black border border-secondary border-4 rounded-pill btn-2">All</button>
+    </a>
     <a href="html/main.html?category=category/creatures">
-      <button type="button" class="btn btn-info">Creatures</button>
+      <button type="button" class="btn btn-info mx-1 px-4 bg-black border border-secondary border-4 rounded-pill btn-2">Creatures</button>
     </a>
     <a href="html/main.html?category=category/equipment">
-      <button type="button" class="btn btn-info">Equipment</button>
+      <button type="button" class="btn btn-info mx-1 px-4 bg-black border border-secondary border-4 rounded-pill btn-2">Equipment</button>
     </a>
     <a href="html/main.html?category=category/materials">
-      <button type="button" class="btn btn-info">Materials</button>
+      <button type="button" class="btn btn-info mx-1 px-4 bg-black border border-secondary border-4 rounded-pill btn-2">Materials</button>
     </a>
     <a href="html/main.html?category=category/monsters">
-      <button type="button" class="btn btn-info">Monsters</button>
+      <button type="button" class="btn btn-info mx-1 px-4 bg-black border border-secondary border-4 rounded-pill btn-2">Monsters</button>
     </a>
     <a href="html/main.html?category=category/treasure">
-      <button type="button" class="btn btn-info">Treasure</button>
+      <button type="button" class="btn btn-info mx-1 px-4 bg-black border border-secondary border-4 rounded-pill btn-2">Treasure</button>
     </a>
-    <a href="html/main.html?category=all">
-      <button type="button" class="btn btn-info">All</button>
-    </a>
+    
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
