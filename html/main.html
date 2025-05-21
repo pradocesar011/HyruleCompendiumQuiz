@@ -14,94 +14,101 @@
   </head>
 
   <body id="background-frame" id="background-image">
+    <div class="d-flex justify-content-center align-items-center vh-100">
+      <div class="d-flex flex-column">
+        <div class="container my-1">
+          <h1 class="text-center mb-1">
+            <img src="../media/BoderDecoration.png"><img/>
+              Breath of the Wild Compendium
+            <img style="transform: scaleX(-1)" src="../media/BoderDecoration.png"><img/>
+            </h1>
+          <h6 class="Sheikah-Pixel text-center display-6 py-1">qwertyuiop</h6>
     
-
-    <div class="container my-1">
-      <h1 class="text-center mb-1">
-        <img src="../media/BoderDecoration.png"><img/>
-          Breath of the Wild Compendium
-        <img style="transform: scaleX(-1)" src="../media/BoderDecoration.png"><img/>
-        </h1>
-      <h6 class="Sheikah-Pixel text-center display-6 py-1">qwertyuiop</h6>
-
-      <div class="row d-flex justify-content-between align-items-start flex-wrap my-3 py-2">
-
-        
-   
-  
-
-        <!-- IMG & Griid cont -->
-        <div class="col-6">
-          <div class="col-md-12 text-center">
-            <!-- This is where the correct entry image will be injected -->
-            <div class="image-container ">
-
-              <img id="answerEntry" class="img-fluid" alt="Answer Entry Image" />
-              <div class="grid-overlay">
-                <div class="grid-cell"></div>
-                <div class="grid-cell"></div>
-                <div class="grid-cell"></div>
-                <div class="grid-cell"></div>
-
-                <div class="grid-cell"></div>
-                <div class="grid-cell"></div>
-                <div class="grid-cell"></div>
-                <div class="grid-cell"></div>
-
-                <div class="grid-cell"></div>
-                <div class="grid-cell"></div>
-                <div class="grid-cell"></div>
-                <div class="grid-cell"></div>
+          <div class="row d-flex justify-content-between align-items-start flex-wrap my-3 py-2">
+    
+            
+       
+      
+    
+            <!-- IMG & Griid cont -->
+            <div class="col-6">
+              <div class="col-md-12 text-center">
+                <!-- This is where the correct entry image will be injected -->
+                <div class="image-container ">
+    
+                  <img id="answerEntry" class="img-fluid" alt="Answer Entry Image" />
+                  <div class="grid-overlay">
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+    
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+    
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+    
+            <div class="col-6 justify-content-center align-items-center">
+              <div id="resultMessage" class="text-center">
+                <h3 class="text-success">Correct!</h3>
+                <h4 id="correct-name" class="text-capitalize"></h4>
+                <p id="correct-description"></p>
+                <button type="button" class="btn py-2 px-4 rounded-pill  bg-black" id="reload-btn">Correct!</button>
               </div>
             </div>
           </div>
-        </div>
-        
-
-        <div class="col-6 justify-content-center align-items-center">
-          <div id="resultMessage" class="text-center">
-            <h3 class="text-success">Correct!</h3>
-            <h4 id="correct-name" class="text-capitalize"></h4>
-            <p id="correct-description"></p>
-            <button type="button" class="btn py-2 px-4 rounded-pill  bg-black" id="reload-btn">Correct!</button>
+    
+    
+    
+          
+          <!-- <button id="testBtn" class="btn btn-primary">Test</button>
+          <button id="testBtnClear" class="btn btn-primary">Clear</button> -->
+    
+    
+          <div id="entries" class="row gy-4 justify-content-center">
+            <!-- Random entries will be displayed here -->
           </div>
         </div>
+    
+    
+        <br>
+    
+    
+      <div class="container d-flex my-4 py-2 justify-content-center bg-transparent flex-wrap gap-2">
+        <a href="../index.html">
+        <button type="button" class="btn btn-info ms-10 px-4 bg-dark border border-secondary border-4 rounded-pill btn-2">
+            Return
+        </button>
+        </a>
+        <button type="button" class="btn btn-info mx-1 px-4 bg-black border border-secondary border-4 rounded-pill btn-2" id="btn-all">All</button>
+        <button type="button" class="btn btn-info mx-1 px-4 bg-black border border-secondary border-4 rounded-pill btn-2" id="btn-creatures">Creatures</button>
+        <button type="button" class="btn btn-info mx-1 px-4 bg-black border border-secondary border-4 rounded-pill btn-2" id="btn-equipment">Equipment</button>
+        <button type="button" class="btn btn-info mx-1 px-4 bg-black border border-secondary border-4 rounded-pill btn-2" id="btn-materials">Materials</button>
+        <button type="button" class="btn btn-info mx-1 px-4 bg-black border border-secondary border-4 rounded-pill btn-2" id="btn-monsters">Monsters</button>
+        <button type="button" class="btn btn-info mx-1 px-4 bg-black border border-secondary border-4 rounded-pill btn-2" id="btn-treasure">Treasure</button>
       </div>
 
 
-
-      
-      <!-- <button id="testBtn" class="btn btn-primary">Test</button>
-      <button id="testBtnClear" class="btn btn-primary">Clear</button> -->
-
-
-      <div id="entries" class="row gy-4 justify-content-center">
-        <!-- Random entries will be displayed here -->
       </div>
-    </div>
 
-
-    <br>
-
-
-  <div class="container d-flex py-2 justify-content-center bg-transparent flex-wrap gap-2">
-    <a href="../index.html">
-    <button type="button" class="btn btn-info ms-10 px-4 bg-dark border border-secondary border-4 rounded-pill btn-2">
-        Return
-    </button>
-    </a>
-    <button type="button" class="btn btn-info mx-1 px-4 bg-black border border-secondary border-4 rounded-pill btn-2" id="btn-all">All</button>
-    <button type="button" class="btn btn-info mx-1 px-4 bg-black border border-secondary border-4 rounded-pill btn-2" id="btn-creatures">Creatures</button>
-    <button type="button" class="btn btn-info mx-1 px-4 bg-black border border-secondary border-4 rounded-pill btn-2" id="btn-equipment">Equipment</button>
-    <button type="button" class="btn btn-info mx-1 px-4 bg-black border border-secondary border-4 rounded-pill btn-2" id="btn-materials">Materials</button>
-    <button type="button" class="btn btn-info mx-1 px-4 bg-black border border-secondary border-4 rounded-pill btn-2" id="btn-monsters">Monsters</button>
-    <button type="button" class="btn btn-info mx-1 px-4 bg-black border border-secondary border-4 rounded-pill btn-2" id="btn-treasure">Treasure</button>
+    
   </div>
-
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    
     
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
   </body>
 </html>
